@@ -1,0 +1,666 @@
+/* ========================================
+   EYE VISION OPTICS - COMPLETE CSS
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1e22;
+    color: #212529;
+    transition: all 0.3s ease;
+}
+
+/* ========== DARK MODE ========== */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .navbar,
+body.dark-mode footer,
+body.dark-mode .bg-light {
+    background-color: #1a1a2e !important;
+}
+
+body.dark-mode .card,
+body.dark-mode .dropdown-menu,
+body.dark-mode .account-sidebar {
+    background-color: #1e1e2f;
+    color: #e0e0e0;
+}
+
+body.dark-mode .dropdown-item {
+    color: #e0e0e0;
+}
+
+body.dark-mode .dropdown-item:hover {
+    background-color: #333;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background-color: #2a2a3b;
+    color: white;
+    border-color: #555;
+}
+
+body.dark-mode .text-muted {
+    color: #aaa !important;
+}
+
+body.dark-mode .border-bottom {
+    border-color: #333 !important;
+}
+/* ========================================
+   MEGA MENU LINKS - WHITE COLOR
+   ======================================== */
+
+/* Mega Menu Main Container Background */
+.bg-light {
+    background-color: #1a1a2e !important;  /* Dark background for white text */
+}
+
+/* ========== ALL MEGA MENU LINKS WHITE ========== */
+
+/* Main Menu Links (Eyeglasses, Sunglasses, Lenses, My Orders) */
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+/* Main Menu Links Hover Effect */
+.navbar-nav .nav-link:hover {
+    color: #667eea !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+/* Dropdown Menu Background (White background for dropdown) */
+.dropdown-mega .dropdown-menu {
+    background-color: #ffffff !important;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    padding: 25px;
+    margin-top: 10px;
+}
+
+/* Dropdown Column Headings (Men, Women, Kids) */
+.mega-menu-column h6 {
+    color: #667eea !important;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border-bottom: 2px solid #667eea;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Dropdown Links (Classic Frames, Metal Frames, etc.) */
+.mega-menu-column a {
+    display: block;
+    padding: 8px 0;
+    color: #333333 !important;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+}
+
+/* Dropdown Links Hover Effect */
+.mega-menu-column a:hover {
+    color: #667eea !important;
+    padding-left: 8px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+}
+
+/* Dropdown Toggle Arrow Color */
+.dropdown-toggle::after {
+    color: #ffffff !important;
+}
+
+/* Active Menu Item */
+.navbar-nav .nav-link.active {
+    color: #667eea !important;
+    background-color: rgba(102, 126, 234, 0.2);
+    border-radius: 8px;
+}
+
+/* Border Bottom Color */
+.border-bottom {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* ========== DARK MODE SUPPORT ========== */
+body.dark-mode .bg-light {
+    background-color: #0d0d1a !important;
+}
+
+body.dark-mode .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+body.dark-mode .dropdown-mega .dropdown-menu {
+    background-color: #1e1e2f !important;
+}
+
+body.dark-mode .mega-menu-column a {
+    color: #cccccc !important;
+}
+
+body.dark-mode .mega-menu-column a:hover {
+    background-color: #2a2a3b;
+    color: #667eea !important;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 992px) {
+    .bg-light {
+        background-color: #1a1a2e !important;
+    }
+    
+    .dropdown-mega .dropdown-menu {
+        background-color: #2a2a3b !important;
+    }
+    
+    .mega-menu-column a {
+        color: #cccccc !important;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 8px 15px;
+    }
+}
+
+/* ========== HERO SECTION ========== */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 80px 0;
+    color: white;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.hero-section .btn-light {
+    border-radius: 50px;
+    padding: 12px 35px;
+    font-weight: 600;
+}
+
+/* ========== CATEGORY CARDS ========== */
+.category-card {
+    background: white;
+    text-align: center;
+    padding: 35px 20px;
+    border-radius: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+}
+
+.category-card i {
+    font-size: 3rem;
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.category-card h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.category-card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+body.dark-mode .category-card {
+    background: #1e1e2f;
+}
+
+body.dark-mode .category-card p {
+    color: #aaa;
+}
+
+/* ========== PRODUCT CARDS ========== */
+.product-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s;
+    height: 100%;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.12);
+}
+
+.product-card img {
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-card .card-body {
+    padding: 1.2rem;
+}
+
+.product-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    color: #667eea;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* Rating Stars */
+.rating i {
+    color: #ffc107;
+    font-size: 0.85rem;
+}
+
+.rating .far.fa-star {
+    color: #ddd;
+}
+
+/* Wishlist Heart */
+.wishlist-heart {
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: #ccc;
+    transition: all 0.2s;
+}
+
+.wishlist-heart.active {
+    color: #dc3545;
+}
+
+.wishlist-heart:hover {
+    transform: scale(1.1);
+}
+
+/* ========== PRODUCT DETAILS PAGE ========== */
+.main-image-section {
+    background: #f5f5f5;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-product-image {
+    max-height: 350px;
+    width: auto;
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+.thumbnail-gallery {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.gallery-thumb {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+.gallery-thumb:hover,
+.gallery-thumb.active {
+    border-color: #667eea;
+    transform: scale(1.05);
+}
+
+/* Color & Size Buttons */
+.color-option-btn, .size-option-btn {
+    transition: all 0.2s;
+}
+
+.color-option-btn:hover, .size-option-btn:hover {
+    transform: scale(1.05);
+}
+
+/* ========== CART PAGE ========== */
+.cart-item-card {
+    border-radius: 16px;
+    margin-bottom: 15px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.cart-item-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.qty-input {
+    width: 70px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* ========== CHECKOUT PAGE ========== */
+.order-summary-card {
+    background: #f8f9fa;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.summary-total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #667eea;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+body.dark-mode .order-summary-card {
+    background: #2a2a3b;
+}
+
+/* ========== TOAST NOTIFICATION ========== */
+.toast-notify {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+    z-index: 9999;
+    font-weight: bold;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    animation: slideInOut 2.8s ease forwards;
+}
+
+@keyframes slideInOut {
+    0% { opacity: 0; transform: translateX(100px); }
+    15% { opacity: 1; transform: translateX(0); }
+    85% { opacity: 1; }
+    100% { opacity: 0; transform: translateX(100px); visibility: hidden; }
+}
+
+/* ========== ACCOUNT SIDEBAR ========== */
+.account-sidebar {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.account-menu-item {
+    padding: 12px 15px;
+    border-radius: 12px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    transition: all 0.2s;
+    margin-bottom: 5px;
+}
+
+.account-menu-item:hover,
+.account-menu-item.active {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+body.dark-mode .account-sidebar {
+    background: #1e1e2f;
+}
+
+body.dark-mode .account-menu-item {
+    color: #e0e0e0;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background: #1a1a2e;
+    color: white;
+    padding: 50px 0 20px;
+    margin-top: 60px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #aaa;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.footer-links a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.3rem;
+    margin-right: 15px;
+    transition: all 0.2s;
+}
+
+.social-icons a:hover {
+    color: #667eea;
+    transform: translateY(-3px);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 992px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .search-bar {
+        min-width: auto;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 50px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+    
+    .product-card img {
+        height: 180px;
+    }
+    
+    .gallery-thumb {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+    
+    .category-card {
+        padding: 25px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-thumb {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .cart-item-img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* ========================================
+   IMAGE SIZE SETTINGS - COMPLETE SOLUTIONS
+   ======================================== */
+
+/* ========== PRODUCT CARD IMAGES (Home Page, Shop Page) ========== */
+.product-card img {
+    width: 100%;           /* Full width of card */
+    height: 220px;         /* Fixed height */
+    object-fit: cover;     /* Image crop karega, shape maintain karega */
+    object-position: center; /* Center position */
+    transition: transform 0.3s;
+}
+
+/* Agar images stretched lag rahi hain to ye use karein */
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;   /* Full image dikhegi, lekin background aayega */
+    background-color: #f5f5f5;
+}
+
+/* ========== PRODUCT DETAIL PAGE MAIN IMAGE ========== */
+.main-image-section {
+    background: #f5f5f5;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-product-image {
+    max-width: 100%;       /* Container se zyada nahi jayegi */
+    max-height: 350px;     /* Maximum height limit */
+    width: auto;           /* Width automatic adjust */
+    height: auto;          /* Height automatic adjust */
+    object-fit: contain;   /* Poori image dikhegi */
+    border-radius: 12px;
+}
+
+/* ========== THUMBNAIL GALLERY IMAGES ========== */
+.gallery-thumb {
+    width: 80px;           /* Fixed width */
+    height: 80px;          /* Fixed height */
+    object-fit: cover;     /* Crop to fit */
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+/* ========== CART PAGE IMAGES ========== */
+.cart-item-img {
+    width: 80px;           /* Fixed width */
+    height: 80px;          /* Fixed height */
+    object-fit: cover;     /* Crop to fit */
+    border-radius: 10px;
+}
+
+/* ========== CATEGORY CARD IMAGES (Agar lagaye to) ========== */
+.category-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* ========== RESPONSIVE IMAGE SIZES ========== */
+@media (max-width: 768px) {
+    .product-card img {
+        height: 180px;     /* Mobile par chhoti height */
+    }
+    
+    .gallery-thumb {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .cart-item-img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .main-product-image {
+        max-height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card img {
+        height: 150px;
+    }
+    
+    .gallery-thumb {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Agar images URL ke through nahi aa rahi to background method use karein */
+.product-card .image-container {
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
