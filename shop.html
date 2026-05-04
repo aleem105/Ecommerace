@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Eye Vision Optics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Same Navbar as index.html -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top"><div class="container"><a class="navbar-brand fw-bold" href="index.html"><i class="fas fa-eye logo-icon"></i> Eye Vision <span style="color:#667eea">Optics</span></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav"><div class="search-bar mx-auto"><div class="input-group"><input type="text" id="shopSearch" class="form-control" placeholder="Search products..."><button class="btn btn-primary"><i class="fas fa-search"></i></button></div></div><ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li><li class="nav-item"><a class="nav-link nav-icon" href="wishlist.html"><i class="fas fa-heart"></i><span class="badge bg-danger" id="wishlistCount">0</span></a></li><li class="nav-item"><a class="nav-link nav-icon" href="cart.html"><i class="fas fa-shopping-cart"></i><span class="badge bg-danger" id="cartCount">0</span></a></li><li class="nav-item ms-2"><button id="darkModeToggle" class="btn btn-outline-light rounded-circle"><i class="fas fa-moon"></i></button></li></ul></div></div></nav>
+
+<div class="container my-4"><h2 class="mb-3 fw-bold">All Products</h2><div class="card shadow-sm p-3 mb-4"><div class="row g-3"><div class="col-md-4"><select id="categoryFilter" class="form-select"><option value="all">All Categories</option><option value="Eyeglasses">Eyeglasses</option><option value="Sunglasses">Sunglasses</option><option value="Lenses">Lenses</option></select></div><div class="col-md-3"><select id="subCategoryFilter" class="form-select"><option value="all">All Sub-Categories</option><option value="Men">Men</option><option value="Women">Women</option><option value="Kids">Kids</option><option value="Unisex">Unisex</option></select></div><div class="col-md-3"><select id="sortSelect" class="form-select"><option value="default">Sort by: Default</option><option value="low-high">Price: Low to High</option><option value="high-low">Price: High to Low</option></select></div><div class="col-md-2"><button id="resetFilters" class="btn btn-secondary w-100">Reset</button></div></div></div><div id="shopProductsContainer" class="row g-4"></div></div>
+
+<footer class="bg-dark text-white text-center py-3"><p>&copy; 2025 Eye Vision Optics | Premium Eyewear</p></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/shop.js"></script>
+</body>
+</html>

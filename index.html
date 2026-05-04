@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Vision Optics - Premium Eyewear</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html"><i class="fas fa-eye logo-icon"></i> Eye Vision <span style="color:#667eea">Optics</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="search-bar mx-auto">
+                <div class="input-group"><input type="text" id="mainSearch" class="form-control" placeholder="Search products..."><button class="btn btn-primary" onclick="window.location.href='shop.html?search='+document.getElementById('mainSearch').value"><i class="fas fa-search"></i></button></div>
+            </div>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link nav-icon" href="wishlist.html"><i class="fas fa-heart"></i><span class="badge bg-danger" id="wishlistCount">0</span></a></li>
+                <li class="nav-item dropdown"><a class="nav-link nav-icon dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="fas fa-user"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end"><li><a class="dropdown-item" href="orders.html"><i class="fas fa-box"></i> My Orders</a></li><li><hr class="dropdown-divider"></li><li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li></ul>
+                </li>
+                <li class="nav-item"><a class="nav-link nav-icon" href="cart.html"><i class="fas fa-shopping-cart"></i><span class="badge bg-danger" id="cartCount">0</span></a></li>
+                <li class="nav-item ms-2"><button id="darkModeToggle" class="btn btn-outline-light rounded-circle"><i class="fas fa-moon"></i></button></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ========== MEGA MENU ========== -->
+<nav class="navbar navbar-expand-lg bg-light py-2 border-bottom">
+    <div class="container">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item dropdown-mega dropdown"><a class="nav-link fw-semibold dropdown-toggle" href="#" data-bs-toggle="dropdown">👓 Eyeglasses</a>
+                <div class="dropdown-menu p-4"><div class="row"><div class="col-md-4 mega-menu-column"><h6>Men</h6><a href="shop.html?category=Eyeglasses&sub=Men">Classic Frames</a><a href="shop.html?category=Eyeglasses&sub=Men">Metal Frames</a><a href="shop.html?category=Eyeglasses&sub=Men">Designer Collection</a></div><div class="col-md-4 mega-menu-column"><h6>Women</h6><a href="shop.html?category=Eyeglasses&sub=Women">Cat-Eye</a><a href="shop.html?category=Eyeglasses&sub=Women">Oversized</a><a href="shop.html?category=Eyeglasses&sub=Women">Round Frames</a></div><div class="col-md-4 mega-menu-column"><h6>Kids</h6><a href="shop.html?category=Eyeglasses&sub=Kids">Flexible Frames</a><a href="shop.html?category=Eyeglasses&sub=Kids">Sports Frames</a><a href="shop.html?category=Eyeglasses&sub=Kids">Blue Block</a></div></div></div>
+            </li>
+            <li class="nav-item"><a class="nav-link fw-semibold" href="shop.html?category=Sunglasses">🕶️ Sunglasses</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold" href="shop.html?category=Lenses">💎 Lenses</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold" href="orders.html">📦 My Orders</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ========== HERO SECTION ========== -->
+<section class="hero-section"><div class="container"><h1 class="display-4 fw-bold">See the World Clearly</h1><p class="lead">Premium Eyewear & Lenses | Up to 40% Off</p><a href="shop.html" class="btn btn-light btn-lg mt-3">Shop Now <i class="fas fa-arrow-right"></i></a></div></section>
+
+<!-- ========== CATEGORY CARDS ========== -->
+<div class="container my-5"><div class="row g-4"><div class="col-md-3"><div class="category-card" onclick="location.href='shop.html?category=Eyeglasses&sub=Men'"><i class="fas fa-male"></i><h4>Men</h4><p>Eyeglasses for Men</p></div></div><div class="col-md-3"><div class="category-card" onclick="location.href='shop.html?category=Eyeglasses&sub=Women'"><i class="fas fa-female"></i><h4>Women</h4><p>Eyeglasses for Women</p></div></div><div class="col-md-3"><div class="category-card" onclick="location.href='shop.html?category=Eyeglasses&sub=Kids'"><i class="fas fa-child"></i><h4>Kids</h4><p>Eyeglasses for Kids</p></div></div><div class="col-md-3"><div class="category-card" onclick="location.href='shop.html?category=Sunglasses'"><i class="fas fa-sunglasses"></i><h4>Sunglasses</h4><p>Premium Sunglasses</p></div></div></div></div>
+
+<!-- ========== FEATURED PRODUCTS ========== -->
+<div class="container my-5"><h2 class="text-center mb-4 fw-bold">✨ Featured Products</h2><div id="productsContainer" class="row g-4"></div></div>
+
+<!-- ========== FOOTER ========== -->
+<footer><div class="container"><div class="row"><div class="col-md-4 mb-4"><h5><i class="fas fa-eye"></i> Eye Vision Optics</h5><p>Your trusted partner for premium eyewear since 2010. Quality, style, and comfort guaranteed.</p><div class="social-icons"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-youtube"></i></a></div></div><div class="col-md-2 mb-4"><h6>Quick Links</h6><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="col-md-3 mb-4"><h6>Categories</h6><ul class="footer-links"><li><a href="shop.html?category=Eyeglasses">Eyeglasses</a></li><li><a href="shop.html?category=Sunglasses">Sunglasses</a></li><li><a href="shop.html?category=Lenses">Lenses</a></li><li><a href="shop.html">All Products</a></li></ul></div><div class="col-md-3 mb-4"><h6>Contact Info</h6><ul class="footer-links"><li><i class="fas fa-phone"></i> +92 300 1234567</li><li><i class="fas fa-envelope"></i> info@eyevision.pk</li><li><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</li></ul></div></div><hr><div class="text-center"><p>&copy; 2025 Eye Vision Optics. All Rights Reserved.</p></div></div></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
