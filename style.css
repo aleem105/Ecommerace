@@ -1,11 +1,8 @@
 /* ========================================
    EYE VISION OPTICS - COMPLETE CSS
    ======================================== */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  background: red;
 }
 
 body {
